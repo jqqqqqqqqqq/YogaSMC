@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BA24C5F263F556800E8205A /* libkmod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA24C5E263F556800E8205A /* libkmod.a */; };
+		0BA24C60263F556800E8205A /* libkmod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA24C5E263F556800E8205A /* libkmod.a */; };
+		0BA24C6F263F566200E8205A /* Kernel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA24C6E263F566200E8205A /* Kernel.framework */; };
+		0BA24C70263F566200E8205A /* Kernel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA24C6E263F566200E8205A /* Kernel.framework */; };
 		6F0095B525455F02002C8E1F /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8611CD253AA2FA008FB857 /* IOBluetooth.framework */; };
 		6F0095B625455F09002C8E1F /* CoreWLAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8611E0253AB869008FB857 /* CoreWLAN.framework */; };
 		6F0095B725455F2C002C8E1F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1C709F251473CD007D1DFC /* IOKit.framework */; };
@@ -48,8 +52,6 @@
 		6F77A23824F4FE59007A127B /* IdeaSMC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F77A23624F4FE59007A127B /* IdeaSMC.cpp */; };
 		6F77A23924F4FE59007A127B /* IdeaSMC.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6F77A23724F4FE59007A127B /* IdeaSMC.hpp */; };
 		6F77CE872568E88900BE8BBB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6F53F83A2564C51F00CC4140 /* Localizable.strings */; };
-		6F7B0EE925303D83001616D6 /* libkmod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F05D7F125300CDE00471F57 /* libkmod.a */; };
-		6F7B0EEA25303D87001616D6 /* libkmod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F05D7F125300CDE00471F57 /* libkmod.a */; };
 		6F7B5CFF24FBC3CC00AA80FF /* ThinkSMC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F7B5CFD24FBC3CC00AA80FF /* ThinkSMC.cpp */; };
 		6F7B5D0024FBC3CC00AA80FF /* ThinkSMC.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6F7B5CFE24FBC3CC00AA80FF /* ThinkSMC.hpp */; };
 		6F7D484325344C25004074C7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7D484225344C25004074C7 /* main.swift */; };
@@ -200,9 +202,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0BA24C5E263F556800E8205A /* libkmod.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libkmod.a; path = ../MacOSX.sdk/usr/lib/libkmod.a; sourceTree = SDKROOT; };
+		0BA24C6E263F566200E8205A /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/Kernel.framework; sourceTree = DEVELOPER_DIR; };
 		6F05D7E0252E35A000471F57 /* YogaSMCUserClient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = YogaSMCUserClient.cpp; sourceTree = "<group>"; };
 		6F05D7E1252E35A000471F57 /* YogaSMCUserClientPrivate.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = YogaSMCUserClientPrivate.hpp; sourceTree = "<group>"; };
-		6F05D7F125300CDE00471F57 /* libkmod.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libkmod.a; path = MacKernelSDK/Library/x86_64/libkmod.a; sourceTree = "<group>"; };
 		6F08ACE424746B8B00681A63 /* YogaSMC.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YogaSMC.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F08ACE724746B8B00681A63 /* YogaWMI.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = YogaWMI.hpp; sourceTree = "<group>"; };
 		6F08ACE924746B8B00681A63 /* YogaWMI.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = YogaWMI.cpp; sourceTree = "<group>"; };
@@ -219,11 +222,11 @@
 		6F1C7092251473BB007D1DFC /* YogaSMCPane.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = YogaSMCPane.tiff; sourceTree = "<group>"; };
 		6F1C7095251473BB007D1DFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/YogaSMCPane.xib; sourceTree = "<group>"; };
 		6F1C7097251473BB007D1DFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6F1C709F251473CD007D1DFC /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
-		6F1C70A1251473DF007D1DFC /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		6F1C70A3251473E7007D1DFC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
+		6F1C709F251473CD007D1DFC /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = ../MacOSX.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		6F1C70A1251473DF007D1DFC /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = ../MacOSX.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		6F1C70A3251473E7007D1DFC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = ../MacOSX.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		6F1C70A625147410007D1DFC /* YogaSMCPane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YogaSMCPane.swift; sourceTree = "<group>"; };
-		6F1C70B1251475BA007D1DFC /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk/System/Library/Frameworks/PreferencePanes.framework; sourceTree = DEVELOPER_DIR; };
+		6F1C70B1251475BA007D1DFC /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = ../MacOSX.sdk/System/Library/Frameworks/PreferencePanes.framework; sourceTree = SDKROOT; };
 		6F2D45CB24C9494B00A75751 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		6F3DA56D2584968A00A498C9 /* FunctionKeyOff.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = FunctionKeyOff.pdf; sourceTree = "<group>"; };
 		6F3DA56E2584968A00A498C9 /* FunctionKeyOn.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = FunctionKeyOn.pdf; sourceTree = "<group>"; };
@@ -316,7 +319,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F7B0EEA25303D87001616D6 /* libkmod.a in Frameworks */,
+				0BA24C5F263F556800E8205A /* libkmod.a in Frameworks */,
+				0BA24C6F263F566200E8205A /* Kernel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +364,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F7B0EE925303D83001616D6 /* libkmod.a in Frameworks */,
+				0BA24C60263F556800E8205A /* libkmod.a in Frameworks */,
+				0BA24C70263F566200E8205A /* Kernel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,9 +471,10 @@
 				6F1C709F251473CD007D1DFC /* IOKit.framework */,
 				6F984C32253E1A8A00629109 /* NotificationCenter.framework */,
 				6FD082B22537DA1A00491976 /* OSD.framework */,
+				0BA24C6E263F566200E8205A /* Kernel.framework */,
 				6F1C70B1251475BA007D1DFC /* PreferencePanes.framework */,
 				6F7D487A253465DB004074C7 /* ServiceManagement.framework */,
-				6F05D7F125300CDE00471F57 /* libkmod.a */,
+				0BA24C5E263F556800E8205A /* libkmod.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

@@ -53,6 +53,7 @@ static constexpr SMC_KEY KeyTs0P(size_t i) { return SMC_MAKE_IDENTIFIER('T','s',
 
 static constexpr SMC_KEY KeyFNum = SMC_MAKE_IDENTIFIER('F','N','u','m'); // Number of supported fans
 static constexpr SMC_KEY KeyF0Ac(size_t i) { return SMC_MAKE_IDENTIFIER('F',KeyIndexes[i],'A','c'); } // Actual RPM
+static constexpr SMC_KEY KeyF0Dc(size_t i) { return SMC_MAKE_IDENTIFIER('F',KeyIndexes[i],'D','c'); } // Actual RPM
 static constexpr SMC_KEY KeyF0ID(size_t i) { return SMC_MAKE_IDENTIFIER('F',KeyIndexes[i],'I','D'); } // Description
 static constexpr SMC_KEY KeyF0Md(size_t i) { return SMC_MAKE_IDENTIFIER('F',KeyIndexes[i],'M','d'); } // Manual Mode (New)
 static constexpr SMC_KEY KeyF0Mn(size_t i) { return SMC_MAKE_IDENTIFIER('F',KeyIndexes[i],'M','n'); } // Minimum RPM
